@@ -147,6 +147,25 @@ version = "4.7.6"
 
 [[package]]
 category = "main"
+description = "passive checker of Python programs"
+name = "pyflakes"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.2.0"
+
+[[package]]
+category = "main"
+description = "A few extra additions to pyflakes."
+name = "pyflakes-ext"
+optional = false
+python-versions = "*"
+version = "2.0.0"
+
+[package.dependencies]
+pyflakes = ">=2.0.0,<3.0.0"
+
+[[package]]
+category = "main"
 description = "A library for interacting with features of repl.it"
 name = "replit"
 optional = false
@@ -192,7 +211,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "b33ce91abbdb73cc294e8c9a534b0cea4a7ad47789af7aae7ae88534a5e1339b"
+content-hash = "979ee1484b32413fd2e8e34e26653223b89a899e99ab27c7f56f6a9d98914a22"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -304,6 +323,13 @@ multidict = [
     {file = "multidict-4.7.6-cp38-cp38-win32.whl", hash = "sha256:5cf311a0f5ef80fe73e4f4c0f0998ec08f954a6ec72b746f3c179e37de1d210d"},
     {file = "multidict-4.7.6-cp38-cp38-win_amd64.whl", hash = "sha256:7388d2ef3c55a8ba80da62ecfafa06a1c097c18032a501ffd4cabbc52d7f2b19"},
     {file = "multidict-4.7.6.tar.gz", hash = "sha256:fbb77a75e529021e7c4a8d4e823d88ef4d23674a202be4f5addffc72cbb91430"},
+]
+pyflakes = [
+    {file = "pyflakes-2.2.0-py2.py3-none-any.whl", hash = "sha256:0d94e0e05a19e57a99444b6ddcf9a6eb2e5c68d3ca1e98e90707af8152c90a92"},
+    {file = "pyflakes-2.2.0.tar.gz", hash = "sha256:35b2d75ee967ea93b55750aa9edbbf72813e06a66ba54438df2cfac9e3c27fc8"},
+]
+pyflakes-ext = [
+    {file = "pyflakes-ext-2.0.0.tar.gz", hash = "sha256:9b0b5237ce26ac17f955d841d7d15adb7b14471f919a1f858a1baea5d76d0ba9"},
 ]
 replit = [
     {file = "replit-2.0.0-py3-none-any.whl", hash = "sha256:862b49887f486a5c83eba4809b86a977378a008f1c5d53ab3c1187418194cf18"},
